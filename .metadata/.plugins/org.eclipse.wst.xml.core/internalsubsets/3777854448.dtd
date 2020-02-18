@@ -1,0 +1,10 @@
+
+	<!-- 此处为配置信息，配置节点的属性，字节点等信息 -->
+	<!ELEMENT myconfig (package)>
+	<!ELEMENT package (action*)>
+	<!ELEMENT action (result*)>
+	<!ELEMENT result (#PCDATA)>
+	<!ATTLIST action name CDATA #REQUIRED
+					 class CDATA #REQUIRED>
+	<!ATTLIST result name CDATA #IMPLIED
+					 redirect (true|false) "false">

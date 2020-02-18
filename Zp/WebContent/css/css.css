@@ -1,0 +1,14 @@
+.demo01{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #A8A8A8;
+}
+
+
+
+.demo02 li{
+	width: 80px;
+	list-style-type:none;
+	float: left;
+}

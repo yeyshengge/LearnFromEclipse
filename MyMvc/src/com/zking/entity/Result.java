@@ -1,0 +1,26 @@
+package com.zking.entity;
+
+public class Result {
+	private String name;
+	private String isRedirect;
+	private String url;
+	
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getIsRedirect() {
+		return isRedirect;
+	}
+	public void setIsRedirect(String isRedirect) {
+		this.isRedirect = isRedirect;
+	}
+}

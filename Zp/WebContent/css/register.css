@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffffff;
+}
+li {
+    list-style: none;
+}
+.left {
+    width: 480px;
+    float: left;
+}
+.header {
+    width: 1040px;
+    height: 100px;
+    float: right;
+}
+.top {
+    float:  right;
+}
+.header li {
+    float: left;
+    padding: 0 50px;
+}
+
+.header li a {
+    color: #c1c1c1;
+    text-decoration: none;
+    line-height: 100px;
+}
+.header li a:hover {
+    font-weight: 400;
+    color: black;
+}
+.right {
+    width: 1040px;
+    float: left;
+}
+.main {
+    width: 500px;
+    margin: 0 auto;
+}
+.one h4 {
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.two {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 64px;
+    float: left;
+}
+.there {
+    float: right;
+    margin-bottom: 64px;
+}
+.there a {
+    font-size: 28px;
+    text-decoration: none;
+    color: #359eff;
+}
+.there a:hover {
+    color: #094683;
+}
+.input-outer input {
+    height: 50px;
+    width: 438px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+    /*color: #c1c1c1;*/
+    font-size: 20px;
+}
+.input-outer span,
+.input-phone span {
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    color: #333333;
+}
+.input-type select {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+    font-size: 20px;
+    float: left;
+}
+.input-phone input {
+    height: 50px;
+    width: 268px;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.six p {
+    color: #c1c1c1;
+    font-size: 14px;
+}
+.sub input {
+    height: 50px;
+    width: 440px;
+    margin: 40px 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #3588ff;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+}
+.type-radio span {
+    font-size: 14px;
+    color: #c1c1c1;
+}
+.footer {
+    margin: 40px 0;
+    text-align: center;
+    color: #c1c1c1;
+}

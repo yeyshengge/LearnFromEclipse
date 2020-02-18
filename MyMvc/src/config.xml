@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE myConfig[
+	<!-- 此处为配置信息，配置节点的属性，字节点等信息 -->
+	<!ELEMENT myconfig (package)>
+	<!ELEMENT package (action*)>
+	<!ELEMENT action (result*)>
+	<!ELEMENT result (#PCDATA)>
+	<!ATTLIST action name CDATA #REQUIRED
+					 class CDATA #REQUIRED>
+	<!ATTLIST result name CDATA #IMPLIED
+					 redirect (true|false) "false">
+]>
+<myconfig>
+	<package>
+		<action name="Login" class="com.zking.controller.LoginAction">
+			<result name="success">index.jsp</result>
+			<result name="input" redirect="true">login.jsp</result>
+		</action>
+		
+	</package>
+</myconfig>

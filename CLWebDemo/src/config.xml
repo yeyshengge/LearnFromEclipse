@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE myConfig[
+	<!-- 此处为配置信息，配置节点的属性，字节点等信息 -->
+	<!ELEMENT myconfig (package)>
+	<!ELEMENT package (action*)>
+	<!ELEMENT action (result*)>
+	<!ELEMENT result (#PCDATA)>
+	<!ATTLIST action name CDATA #REQUIRED
+					 class CDATA #REQUIRED
+					 method CDATA #REQUIRED>
+	<!ATTLIST result name CDATA #IMPLIED
+					 redirect (true|false) "false">
+]>
+<myconfig>
+	<package>
+		<action name="login" class="com.cl.controller.LoginAction" method="login">
+			<result name="success">homePage.jsp</result>
+			<result name="input" redirect="true">userLogin.jsp</result>
+		</action>
+		<action name="register" class="com.cl.controller.LoginAction" method="register">
+			<result name="success">userLogin.jsp</result>
+			<result name="input" redirect="true">userRegister.jsp</result>
+		</action>
+		<action name="changePwd" class="com.cl.controller.LoginAction" method="changePwd">
+			<result name="success">changePwd3.jsp</result>
+			<result name="input" redirect="true">changePwd1.jsp</result>
+		</action>
+	</package>
+</myconfig>

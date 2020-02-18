@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kerwin.ssm.dao.IPositionDao">
+
+	<select id="loadData2" resultType="com.kerwin.ssm.pojo.Position">
+		select  
+		id,province_id as provinceid,province_name as provincename, 
+		city_id as cityid,city_name as cityname, 
+		county_id as countyid,county_name as countyname, 
+		town_id as townid ,town_name as townname, 
+		village_id as villageid ,village_name as villagename 
+		from j_position
+		<where>
+			<if test="provincename!=null">
+				and province_name like '%${provincename}%'
+			</if>
+			<if test="cityname!=null">
+				and city_name like '%${cityname}%'
+			</if>
+			<if test="countyname!=null">
+				and county_name like '%${countyname}%'
+			</if>
+		</where>
+		
+	</select>
+
+</mapper>
